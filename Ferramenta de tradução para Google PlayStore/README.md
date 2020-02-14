@@ -22,6 +22,6 @@ Daí surgiu a idéia de automatizar isso.
   languageName :Lituano and languageCode :lt
 
 
-
+<img src='https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/1.PNG' width="400">
 
 
