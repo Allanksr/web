@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    	<div align='center'>
+				<div class="panel panel-primary" id="result_panel">
+					<div class="panel-heading">
+						<div class="card bg-light mb-3" >
+							<div class="card-header">1 - First type a text in English</div><br />			
+								<form>
+									<div class="form-group">
+									<input type="email" class="form-control" maxlength="500" id="textinput" aria-describedby="emailHelp" placeholder=" Text goes here">
+									<small id="emailHelp" class="form-text text-muted">the text must be in English and maximum length of 500 characters.</small>
+									</div>													
+								</form>
+						    </div><br />
+
+							<div class="card bg-light mb-3" >
+								<div class="card-header">2 - Select languages to translate</div><br />
+								<div id='lista' class="panel-body"></div>
+							</div>
+							<button id='btnsubmit' type="submit" class="btn btn-primary">Translate</button>
+							<div id='frontarray' class="panel-body"></div>
+					</div>									
+				</div>
+                <div class="form-group">
+					  <label for="exampleFormControlTextarea3">Your tags will apear here bellow</label>
+					  <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+					</div>
+				<br /><br /><br />
+		</div>
+    
+    
+    <script>
+
+var languageName = ['Africâner','Albanês','Alemão','Amárico','Árabe','Armênio','Azerbaijano','Basco','Bengali','Bielorrusso','Birmanês','Búlgaro','Canarim','Catalão','Cazaque','Chinês (Hong Kong)','Chinês (simplificado)','Chinês (tradicional)','Cingalês','Coreano','Croata','Dinamarquês','Eslovaco','Esloveno','Espanhol (América Latina)','Espanhol (Espanha)','Espanhol (Estados Unidos)','Estoniano','Filipino','Finlandês','Francês (Canadá)','Francês (França)','Galego','Georgiano','Grego','Guzerate','Hebraico','Híndi','Holandês','Húngaro','Indonésio','Inglês','Inglês','Inglês','Inglês (Austrália)','Inglês (Canadá)','Inglês (Estados Unidos)','Inglês (Reino Unido)','Islandês','Italiano','Japonês','Khmer','Laosiano','Letão','Lituano','Macedônio','Malaiala','Malaio','Malaio (Malásia)','Marati','Mongol','Nepalês','Norueguês','Panjabi','Persa','Persa','Persa','Persa','Polonês','Português (Portugal)','Português (Brasil)','Quirguiz','Romanche','Romeno','Russo','Sérvio','Suaíli','Sueco','Tailandês','Tâmil','Tcheco','Télugo','Turco','Ucraniano','Urdu','Vietnamita','Zulu'];
+var languageCode = ['af','sq','de','am','ar','hy','az','eu','bn','be','my','bg','kn','ca','kk','zh','zh','zh','si','ko','hr','da','sk','sl','es','es','es','et','fil','fi','fr','fr','gl','ka','el','gu','iw','hi','nl','hu','id','en','en','en','en','en','en','en','is','it','ja','km','lo','lv','lt','mk','ml','ms',' ms','mr','mn','ne','no','pa','fa','fa','fa','fa','pl','pt','pt','ky','rm','ro','ru','sr','sw','sv','th','ta','cs','te','tr','uk','ur','vi','zu'];
+var tagCode =      ['af','sq','de-DE','am','ar','hy-AM','az-AZ','eu-ES','bn-BD','be','my-MM','bg','kn-IN','ca','kk','zh-HK','zh-CN','zh-TW','si-LK','ko-KR','hr','da-DK','sk','sl','es-419','es-ES','es-US','et','fil','fi-FI','fr-CA','fr-FR','gl-ES','ka-GE','el-GR','gu','iw-IL','hi-IN','nl-NL','hu-HU','id','en-IN','en-SG','en-ZA','en-AU','en-CA','en-US','en-GB','is-IS','it-IT','ja-JP','km-KH','lo-LA','lv','lt','mk-MK','ml-IN','ms',' ms-MY','mr-IN','mn-MN','ne-NP','no-NO','pa','fa','fa-AE','fa-AF','fa-IR','pl-PL','pt-PT','pt-BR','ky-KG','rm','ro','ru-RU','sr','sw','sv-SE','th','ta-IN','cs-CZ','te-IN','tr-TR','uk','ur','vi','zu'];
+
+const lista = document.getElementById("lista")
+
+var txt = ``
+languageName.forEach(name)
+
+function name(value, index, array) {
+
+if(languageCode[index]==='en'){
+	  txt = txt+'<button onclick="selectLanguageCode(true,'+"'"+tagCode[index]+"'"+', '+"'"+languageCode[index]+"'"+')"'+
+	'id="'+tagCode[index]+'-'+languageCode[index]+'" '+
+	'title="languageName :'+value+' and languageCode :'+languageCode[index]+'" '+
+	'type="button" class="btn btn-outline-dark">'+value+' '+
+	'<span class="badge badge-light">'+tagCode[index]+'</span>'
+  }else{
+	  txt = txt+'<button onclick="selectLanguageCode(false,'+"'"+tagCode[index]+"'"+', '+"'"+languageCode[index]+"'"+')"'+
+	'id="'+tagCode[index]+'-'+languageCode[index]+'" '+
+	'title="languageName :'+value+' and languageCode :'+languageCode[index]+'" '+
+	'type="button" class="btn btn-outline-dark">'+value+' '+
+	'<span class="badge badge-light">'+tagCode[index]+'</span>'
+  }
+
+
+ lista.innerHTML = txt
+
+
+}
+
+
+    </script>
+    
+    <script>
+    var textinput = document.getElementById('textinput') 
+	var submitBtn = document.getElementById('btnsubmit')
+    var exampleFormControlTextarea3 = document.getElementById('exampleFormControlTextarea3')
+		var frontarray = document.getElementById('frontarray')
+		let box
+		var array = []
+        var arrayEnglish = []
+	function selectLanguageCode(isEnglish, tagCode, languageCode){		
+		box = document.getElementById(tagCode+'-'+languageCode)
+		box.setAttribute('onclick','unSelectLanguageCode('+isEnglish+','+"'"+tagCode+"'"+', '+"'"+languageCode+"'"+')')
+		box.setAttribute('class',`btn btn-success`)
+		
+        if(isEnglish){
+			arrayEnglish.push(tagCode)
+			 console.log(arrayEnglish)
+			}else{
+			array.push([tagCode, languageCode])
+			 console.log(array)
+			}
+        
+	}
+
+	function unSelectLanguageCode(isEnglish, tagCode, languageCode){		
+			 box = document.getElementById(tagCode+'-'+languageCode)
+			 box.setAttribute('onclick','selectLanguageCode('+isEnglish+', '+"'"+tagCode+"'"+', '+"'"+languageCode+"'"+')')
+			 box.setAttribute('class',`btn btn-outline-dark`)
+              if(isEnglish){
+             arrayEnglish = arrayEnglish.filter(item => item !== arrayEnglish[0])
+			 console.log(arrayEnglish)
+			}else{
+			 array = array.filter(item => item !== array[0])
+			 console.log(array)
+			}
+             
+	}
+
+ function callback(whatToWrite) {
+ submitBtn.innerHTML = 'Transled.......translate again'
+     exampleFormControlTextarea3.innerHTML = ''
+     for (var i = 0; i < whatToWrite[0].length; i++) {					
+	  exampleFormControlTextarea3.innerHTML = exampleFormControlTextarea3.value+ '&lt;'+whatToWrite[0][i]+'&gt;'+'&#13;&#10;'+whatToWrite[1][i]+'&#13;&#10;'+'&lt;/'+whatToWrite[0][i]+'&gt;'+'&#13;&#10;'+'&#13;&#10;'
+    }
+    if(arrayEnglish.length>0){
+			 for (var i = 0; i < arrayEnglish.length; i++) {	
+	 exampleFormControlTextarea3.innerHTML = exampleFormControlTextarea3.value+ '&lt;'+arrayEnglish[i]+'&gt;'+'&#13;&#10;'+textinput.value+'&#13;&#10;'+'&lt;/'+arrayEnglish[i]+'&gt;'+'&#13;&#10;'+'&#13;&#10;'
+
+			}
+		}
+    console.log(whatToWrite);
+     textinput.innerHTML = ''
+     textinput.placeholder = 'translate again - > Text goes here'
+    
+ }
+
+	
+    submitBtn.addEventListener('click',function(){
+	var str = textinput.value
+
+	if(array.length>0){		
+		if(str.length>0){
+			submitBtn.innerHTML = 'Translating.......'+str
+            google.script.run.withSuccessHandler(callback).translateForMe(str, array);
+            
+       }else{
+		  submitBtn.innerHTML = 'Type a text.......'
+	   }
+	}else{
+		submitBtn.innerHTML = 'Select a language to translate'
+	}
+
+
+  },false);
+  
+  
+
+	</script>
+  </body>
+</html>
+
+
