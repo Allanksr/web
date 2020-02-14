@@ -14,6 +14,8 @@ Daí surgiu a idéia de automatizar isso.
   </a>
  
  Pelos meus testes ainda não há suporte para alguns idiomas exemplo - Romanche and languageCode :rm
+ 
+ Laosiano and languageCode :lo
 
 
 
