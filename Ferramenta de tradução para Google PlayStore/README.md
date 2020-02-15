@@ -13,7 +13,8 @@ Daí surgiu a idéia de automatizar isso.
     <img src="https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/2.PNG" width="100">
   </a>
   
-  <a title='Testar' href="https://www.youtube.com/watch?v=p0nW4XP2fZE">
+  
+  <a title='Video de exemplo' href="https://www.youtube.com/watch?v=p0nW4XP2fZE">
     <img src="https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/youtube.png" width="50">
   </a>
  
