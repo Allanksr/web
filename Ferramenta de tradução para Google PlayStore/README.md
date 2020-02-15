@@ -9,14 +9,6 @@ O que há de novo na versão?
 Eu tinha que traduzir uma á uma todas as tags.
 Daí surgiu a idéia de automatizar isso.
 
-<a title='Testar' href="https://script.google.com/macros/s/AKfycbwpLQ8Qnpah5-Xd2KqpwGaJFvybeTYXDJLPltrr_O-HyuXJ00Y/exec">
-    <img src="https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/2.PNG" width="100">
-  </a>
-  
-  
-  <a title='Video de exemplo' href="https://www.youtube.com/watch?v=p0nW4XP2fZE">
-    <img src="https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/youtube.png" width="50">
-  </a>
  
  Pelos meus testes ainda não há suporte para alguns idiomas exemplo - 
  
@@ -30,3 +22,11 @@ Daí surgiu a idéia de automatizar isso.
 <img src='https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/1.PNG' width="400">
 
 
+<a title='Testar' href="https://script.google.com/macros/s/AKfycbwpLQ8Qnpah5-Xd2KqpwGaJFvybeTYXDJLPltrr_O-HyuXJ00Y/exec">
+    <img src="https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/2.PNG" width="100">
+  </a>
+  <br />
+  
+  <a title='Video de exemplo' href="https://www.youtube.com/watch?v=p0nW4XP2fZE">
+    <img src="https://raw.githubusercontent.com/Allanksr/web/master/Ferramenta%20de%20tradu%C3%A7%C3%A3o%20para%20Google%20PlayStore/youtube.png" width="50">
+  </a>
