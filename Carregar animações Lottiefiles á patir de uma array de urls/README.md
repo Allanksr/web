@@ -1,7 +1,7 @@
 **JavaScript para carregar animações bodymovin.**
 
 
-[Testar](https://codepen.io/allanksr/pen/abOBZWe)
+<a title='Testar no Codepen' href='https://codepen.io/allanksr/pen/abOBZWe'> 
  <img src="https://raw.githubusercontent.com/Allanksr/web/master/Carregar%20anima%C3%A7%C3%B5es%20Lottiefiles%20%C3%A1%20patir%20de%20uma%20array%20de%20urls/codepen.png" width="150">
 </a>
   
