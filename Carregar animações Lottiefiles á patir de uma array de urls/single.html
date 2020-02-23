@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.js"></script>
+		<style>
+div#scrollmennetwork {
+	background-color: #111;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+div#scrollmennetwork a {
+	display: inline-block;
+	padding: 14px;
+}
+
+div#scrollmennetwork a:hover {
+	background-color: #333;
+}
+
+#lottie0,
+#lottie1,
+#lottie2,
+#lottie3,
+#lottie4,
+#lottie5,
+#lottie6,
+#lottie7,
+#lottie8,
+#lottie9 {
+	width:50px;
+}
+
+#lottie0:hover,
+#lottie1:hover,
+#lottie2:hover,
+#lottie3:hover,
+#lottie4:hover,
+#lottie5:hover,
+#lottie6:hover,
+#lottie7:hover,
+#lottie8:hover,
+#lottie9:hover {
+	width:100px;
+}
+		</style>
+  </head>
+  <body>
+	<div align='center' id="scrollmennetwork"></div>
+		
+	 <script>
+		 //testar https://codepen.io/allanksr/pen/abOBZWe
+		 var animControl = []
+var nova = ''
+var tempLottie = ''
+var urlLottie = [
+    'https://assets2.lottiefiles.com/packages/lf20_dx3CMu.json',
+    'https://assets4.lottiefiles.com/packages/lf20_pWLTA9.json',
+    'https://assets9.lottiefiles.com/packages/lf20_SiFYir.json',
+    'https://assets8.lottiefiles.com/packages/lf20_cmf6a3.json',
+    'https://assets7.lottiefiles.com/packages/lf20_hfgbno.json',
+    'https://assets8.lottiefiles.com/packages/lf20_7A0nyA.json',
+    'https://assets7.lottiefiles.com/packages/lf20_kVzAFc.json',
+    'https://assets10.lottiefiles.com/datafiles/4pdUCLHZQdxJX79/data.json',
+    'https://assets5.lottiefiles.com/packages/lf20_EAfMOs/Youtube.json',
+    'https://assets3.lottiefiles.com/packages/lf20_TAs0Zd.json'
+]
+
+var urlNetwork = [
+    'https://lottiefiles.com/allanksr',
+    'https://lottiefiles.com/allanksr',
+    'https://lottiefiles.com/allanksr',
+    'https://lottiefiles.com/user/210371',
+    'https://lottiefiles.com/user/74933',
+    'https://lottiefiles.com/user/211222',
+    'https://lottiefiles.com/user/189011',
+    'https://lottiefiles.com/basdamming',
+    'https://lottiefiles.com/marketplace',
+    'https://lottiefiles.com/Fazal'
+]
+var urlTitle = ['Clique para ver o Animador que á criou']
+var scrollmennetwork = document.getElementById('scrollmennetwork')
+
+loadLottie()
+
+function loadLottie() {
+
+    for (var i = 0; i < urlLottie.length; i++) {
+        tempLottie = tempLottie + '<a onclick="playPause(' + i + ')" title="' + urlTitle[0] + '" target="_blank""><div id="lottie' + i + '"></div></a>'
+        scrollmennetwork.innerHTML = tempLottie
+    }
+
+    initLoad()
+}
+
+
+
+function initLoad() {
+    for (var i = 0; i < urlLottie.length; i++) {
+        nova = {
+            wrapper: document.getElementById('lottie' + i),
+            animType: 'svg',
+            loop: true,
+            prerender: true,
+            autoplay: true,
+            path: urlLottie[i]
+        }
+
+        animControl.push(bodymovin.loadAnimation(nova))
+
+    }
+    console.log('animControl :', animControl)
+}
+
+var isDoubleClick = false
+
+function playPause(animControlIndex) {
+
+    if (isDoubleClick) {
+
+        window.open(urlNetwork[animControlIndex])
+        window.clearTimeout(doubleClick)
+        isDoubleClick = false
+    } else {
+        if (!animControl[animControlIndex].isPaused) {
+            animControl[animControlIndex].pause()
+        } else {
+            animControl[animControlIndex].play()
+        }
+        isDoubleClick = true
+        var doubleClick = setTimeout(function() {
+            isDoubleClick = false
+        }, 500)
+
+    }
+
+
+
+    console.log('doubleClick', isDoubleClick)
+
+
+}
+  
+
+  </script>
+	
+
+  </body>
+</html>
+
+

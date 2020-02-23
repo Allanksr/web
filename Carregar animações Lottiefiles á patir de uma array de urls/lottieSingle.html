@@ -1,0 +1,25 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.js"></script>
+<div onclick="Reload()" align="center">
+   <div id="lottieAnimdt"/>
+</div>
+
+<script>
+var anim;
+var nova;
+var UrlJsonLottie = "https://assets1.lottiefiles.com/datafiles/tp0hd5hXeHJEhzM/data.json";
+  nova = {
+		wrapper: document.getElementById("lottieAnimdt"),
+		animType: 'svg',
+		loop: 3,
+		prerender: true,
+		autoplay: true,
+		path:UrlJsonLottie
+		};
+ anim = bodymovin.loadAnimation(nova);
+ anim.setSpeed(0.5,nova);
+
+function Reload(){
+anim.stop();
+anim.play();
+} 
+  </script></div>
