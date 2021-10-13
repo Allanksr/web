@@ -1,5 +1,3 @@
-**Aplicações Web**
+**Após implementar**
  
- Os códigos e aplicações que publicamos aqui aqui são para um único meio especifico o OPEN SOURCE.
- Fique a vontade para fazer seu fork editar ou fazer as modificações desejadas.
- Licença [MIT](https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT).
+<img src="https://github.com/Allanksr/web/blob/master/Icones%20flutuantes%20aleat%C3%B3rios/imagen%20demo/exemplo.gif">
