@@ -1,0 +1,1675 @@
+body {
+	background-image: url("https://lh3.googleusercontent.com/-VRXR8Wj9CjU/YWW-069ewXI/AAAAAAAAQSc/3xQGUgRRr8kc5Alm2r7oA0b9khjFdJK0wCLcBGAsYHQ/cat_bg.gif");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.cookie-consent {
+	z-index:1;
+	opacity: 0.9;
+	position: fixed;
+	bottom: 15px;
+	width: 90%;
+	padding-top: 7px;
+	height: 120px;
+	color: #fff;
+	font-size: 20px;
+	background: #6e96da;
+	border-radius: 3px
+}
+
+.button-allow,
+.button-deny {
+	height: 40px;
+	width: 204px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 10px;
+	border-radius: 3px;
+	border: 1px solid:#f2e6ff;
+	background-color: #527585;
+}
+
+.reloadpage {
+	box-shadow: inset 0px 1px 0px 0px #9496d0;
+	background: linear-gradient(to bottom, #396cca 5%, #2a2929 100%);
+	background-color: #ffffff;
+	border-radius: 14px;
+	border: 2px solid #0053ff;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 30px;
+	padding: 9px 7px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #d5784e;
+	text-align: center;
+	position: absolute;
+	top: 10%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.num0 {
+	opacity: 0.7;
+	font-size: 20px;
+	font-weight: 700;
+	color: #b1abab;
+	display: block;
+	position: absolute;
+	-webkit-animation: num0X 9.05s linear 0s infinite alternate, num0Y 4s linear 0s infinite alternate;
+	-moz-animation: num0X 9.05s linear 0s infinite alternate, num0Y 4s linear 0s infinite alternate;
+	-o-animation: num0X 9.05s linear 0s infinite alternate, num0Y 4s linear 0s infinite alternate;
+	animation: num0X 9.05s linear 0s infinite alternate, num0Y 4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num0X {
+	from {
+		right: 10%;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num0X {
+	from {
+		right: 10%;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num0X {
+	from {
+		right: 10%;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num0X {
+	from {
+		right: 10%;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num0Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num0Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num0Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num0Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num1 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num1X 13.05s linear 0s infinite alternate, num1Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num1X 13.05s linear 0s infinite alternate, num1Y 3.4s linear 0s infinite alternate;
+	-o-animation: num1X 13.05s linear 0s infinite alternate, num1Y 3.4s linear 0s infinite alternate;
+	animation: num1X 13.05s linear 0s infinite alternate, num1Y 3.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num1X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num1X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num1X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num1X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num1Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num1Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num1Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num1Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num2 {
+	opacity: 0.7;
+	font-size: 35px;
+	font-weight: 600;
+	color: #bda4a4;
+	display: block;
+	position: absolute;
+	-webkit-animation: num2X 13.05s linear 0s infinite alternate, num2Y 20s linear 0s infinite alternate;
+	-moz-animation: num2X 13.05s linear 0s infinite alternate, num2Y 20s linear 0s infinite alternate;
+	-o-animation: num2X 13.05s linear 0s infinite alternate, num2Y 20s linear 0s infinite alternate;
+	animation: num2X 13.05s linear 0s infinite alternate, num2Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num2X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num2X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num2X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num2X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num2Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num2Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num2Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num2Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num3 {
+	opacity: 0.7;
+	font-size: 15px;
+	font-weight: 900;
+	color: #e1d1c2;
+	display: block;
+	position: absolute;
+	-webkit-animation: num3X 12s linear 0s infinite alternate, num3Y 20s linear 0s infinite alternate;
+	-moz-animation: num3X 12s linear 0s infinite alternate, num3Y 20s linear 0s infinite alternate;
+	-o-animation: num3X 12s linear 0s infinite alternate, num3Y 20s linear10s infinite alternate;
+	animation: num3X 12s cubic-bezier(0, 0, 0.31, 1.18) 10s infinite alternate, num3Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num3X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num3X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num3X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num3X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num3Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num3Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num3Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num3Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num4 {
+	opacity: 0.7;
+	font-size: 45px;
+	font-weight: 900;
+	color: #bcc6eb;
+	display: block;
+	position: absolute;
+	-webkit-animation: num4X 13s cubic-bezier(0, 0, 0.28, 0.61) 0s infinite alternate, num4Y 20s linear 0s infinite alternate;
+	-moz-animation: num4X 13s cubic-bezier(0.47, 0.68, 0.74, 0.22) 0s infinite alternate, num4Y 20s linear 0s infinite alternate;
+	-o-animation: num4X 13s cubic-bezier(0.39, 0.54, 1, 1) 0s infinite alternate, num4Y 20s linear 0s infinite alternate;
+	animation: num4X 13s cubic-bezier(0.32, 0.71, 0.15, 1.02) 0s infinite alternate, num4Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num4X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num4X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num4X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num4X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num4Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num4Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num4Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num4Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num5 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #c2b1e3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num5X 13s linear 0s infinite alternate, num5Y 20s linear 0s infinite alternate;
+	-moz-animation: num5X 13s linear 0s infinite alternate, num5Y 20s linear 0s infinite alternate;
+	-o-animation: num5X 13s linear 0s infinite alternate, num5Y 20s linear 0s infinite alternate;
+	animation: num5X 13s cubic-bezier(0, 0, 0.33, 0.46) 0s infinite alternate, num5Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num5X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num5X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num5X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num5X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num5Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num5Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num5Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num5Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num6 {
+	opacity: 0.7;
+	font-size: 40px;
+	font-weight: 600;
+	color: #beedd5;
+	display: block;
+	position: absolute;
+	-webkit-animation: num6X 10s cubic-bezier(0.58, 0.32, 0.29, 0.76) 0s infinite alternate, num6Y 20s linear 0s infinite alternate;
+	-moz-animation: num6X 10s cubic-bezier(0.68, 0.18, 0.35, 0.73) 0s infinite alternate, num6Y 20s linear 0s infinite alternate;
+	-o-animation: num6X 10s cubic-bezier(1, 0.49, 1, 1) 0s infinite alternate, num6Y 20s linear 0s infinite alternate;
+	animation: num6X 10s cubic-bezier(0, 0, 0.02, 0.37) 0s infinite alternate, num6Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num6X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num6X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num6X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num6X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num6Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num6Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num6Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num6Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num7 {
+	opacity: 0.7;
+	font-size: 40px;
+	font-weight: 900;
+	color: #ecedbb;
+	display: block;
+	position: absolute;
+	-webkit-animation: num7X 1s cubic-bezier(0.15, 0.92, 1, 1) 0s infinite alternate, num7Y 20s linear 0s infinite alternate;
+	-moz-animation: num7X 5s cubic-bezier(0, 0, 0.14, 0.76) 0s infinite alternate, num7Y 20s linear 0s infinite alternate;
+	-o-animation: num7X 9s cubic-bezier(0, 0, 0.1, 0.87) 0s infinite alternate, num7Y 20s linear 0s infinite alternate;
+	animation: num7X 10s cubic-bezier(0.07, 1.01, 1, 1) 0s infinite alternate, num7Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num7X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num7X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num7X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num7X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num7Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num7Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num7Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num7Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num8 {
+	opacity: 0.7;
+	font-size: 40px;
+	font-weight: 900;
+	color: #d3a2a9;
+	display: block;
+	position: absolute;
+	-webkit-animation: num8X 13.05s linear 0s infinite alternate, num8Y 20s linear 0s infinite alternate;
+	-moz-animation: num8X 13.05s linear 0s infinite alternate, num8Y 20s linear 0s infinite alternate;
+	-o-animation: num8X 13.05s linear 0s infinite alternate, num8Y 20s linear 0s infinite alternate;
+	animation: num8X 13.05s cubic-bezier(0.84, 0.7, 0.09, 0.49) 0s infinite alternate, num8Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num8X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num8X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num8X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num8X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num8Y {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num8Y {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num8Y {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num8Y {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num9 {
+	opacity: 0.7;
+	font-size: 40px;
+	color: #a8e2e5;
+	display: block;
+	position: absolute;
+	-webkit-animation: num9X 1s linear 0s infinite alternate, num9Y 20s linear 0s infinite alternate;
+	-moz-animation: num9X 5s linear 0s infinite alternate, num9Y 20s linear 0s infinite alternate;
+	-o-animation: num9X 9s linear 0s infinite alternate, num9Y 20s linear 0s infinite alternate;
+	animation: num9X 15s linear 0s infinite alternate, num9Y 20s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num9X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num9X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num9X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num9X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num9Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num9Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num9Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num9Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num10 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num10X 13.05s cubic-bezier(0.89, 0.15, 0.19, 0.78) 0s infinite alternate, num10Y 3.4s cubic-bezier(0, 0, 0.6, 0.06) 0s infinite alternate;
+	-moz-animation: num10X 13.05s cubic-bezier(1, -0.11, 0.31, 0.73) 0s infinite alternate, num10Y 3.4s linear 0s infinite alternate;
+	-o-animation: num10X 13.05s cubic-bezier(0.82, 0.16, 0.27, 0.47) 0s infinite alternate, num10Y 3.4s linear 0s infinite alternate;
+	animation: num10X 13.05s cubic-bezier(0.6, 0.29, 0, 0.88) 0s infinite alternate, num10Y 3.4s cubic-bezier(0.43, 0.51, 0.56, 0.35) 0s infinite alternate;
+}
+
+@-webkit-keyframes num10X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num10X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num10X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num10X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num10Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num10Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num10Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num10Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num11 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num11X 13.05s linear 0s infinite alternate, num11Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num11X 13.05s linear 0s infinite alternate, num11Y 3.4s linear 0s infinite alternate;
+	-o-animation: num11X 13.05s linear 0s infinite alternate, num11Y 3.4s linear 0s infinite alternate;
+	animation: num11X 13.05s linear 0s infinite alternate, num11Y 3.4s cubic-bezier(0, 0, 0.76, 0.15) 0s infinite alternate;
+}
+
+@-webkit-keyframes num11X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num11X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num11X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num11X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num11Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num11Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num11Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num11Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num12 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num12X 13.05s linear 0s infinite alternate, num12Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num12X 13.05s linear 0s infinite alternate, num12Y 3.4s linear 0s infinite alternate;
+	-o-animation: num12X 13.05s linear 0s infinite alternate, num12Y 3.4s linear 0s infinite alternate;
+	animation: num12X 13.05s linear 0s infinite alternate, num12Y 3.4s cubic-bezier(0.87, 0.48, 0.21, 0.76) 0s infinite alternate;
+}
+
+@-webkit-keyframes num12X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num12X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num12X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num12X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num12Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num12Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num12Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num12Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num13 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num13X 13.05s cubic-bezier(0, 0, 0.15, 0.63) 0s infinite alternate, num13Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num13X 13.05s linear 0s infinite alternate, num13Y 3.4s linear 0s infinite alternate;
+	-o-animation: num13X 13.05s linear 0s infinite alternate, num13Y 3.4s linear 0s infinite alternate;
+	animation: num13X 13.05s cubic-bezier(0.74, 0.42, 0.24, 0.68) 0s infinite alternate, num13Y 3.4s cubic-bezier(0.68, 0.36, 0.17, 0.74) 0s infinite alternate;
+}
+
+@-webkit-keyframes num13X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num13X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num13X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num13X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num13Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num13Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num13Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num13Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num14 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num14X 13.05s linear 0s infinite alternate, num14Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num14X 13.05s linear 0s infinite alternate, num14Y 3.4s linear 0s infinite alternate;
+	-o-animation: num14X 13.05s linear 0s infinite alternate, num14Y 3.4s linear 0s infinite alternate;
+	animation: num14X 13.05s cubic-bezier(0, 0, 0.23, 0.69) 0s infinite alternate, num14Y 3.4s cubic-bezier(0.62, 0.45, 0.44, 0.51) 0s infinite alternate;
+}
+
+@-webkit-keyframes num14X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num14X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num14X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num14X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num14Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num14Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num14Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num14Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num15 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num15X 13.05s linear 0s infinite alternate, num15Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num15X 13.05s linear 0s infinite alternate, num15Y 3.4s linear 0s infinite alternate;
+	-o-animation: num15X 13.05s linear 0s infinite alternate, num15Y 3.4s linear 0s infinite alternate;
+	animation: num15X 13.05s cubic-bezier(0.9, 0.8, 0.58, 1) 0s infinite alternate, num15Y 3.4s cubic-bezier(0.79, 0.63, 0.16, 0.46) 0s infinite alternate;
+}
+
+@-webkit-keyframes num15X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num15X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num15X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num15X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num15Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num15Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num15Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num15Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num16 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num16X 13.05s linear 0s infinite alternate, num16Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num16X 13.05s linear 0s infinite alternate, num16Y 3.4s linear 0s infinite alternate;
+	-o-animation: num16X 13.05s linear 0s infinite alternate, num16Y 3.4s linear 0s infinite alternate;
+	animation: num16X 13.05s cubic-bezier(0.57, 0.36, 0.58, 0.37) 0s infinite alternate, num16Y 3.4s cubic-bezier(0.33, 0.64, 0.33, 0.63) 0s infinite alternate;
+}
+
+@-webkit-keyframes num16X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num16X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num16X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num16X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num16Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num16Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num16Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num16Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num17 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num17X 13.05s linear 0s infinite alternate, num17Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num17X 13.05s linear 0s infinite alternate, num17Y 3.4s linear 0s infinite alternate;
+	-o-animation: num17X 13.05s linear 0s infinite alternate, num17Y 3.4s linear 0s infinite alternate;
+	animation: num17X 13.05s linear 0s infinite alternate, num17Y 3.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes num17X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-moz-keyframes num17X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-o-keyframes num17X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@keyframes num17X {
+	from {
+		right: 0;
+	}
+	to {
+		right: 90%;
+	}
+}
+
+@-webkit-keyframes num17Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num17Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num17Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num17Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+.num18 {
+	opacity: 0.7;
+	font-size: 25px;
+	font-weight: 900;
+	color: #f7d3d3;
+	display: block;
+	position: absolute;
+	-webkit-animation: num18X 13.05s linear 0s infinite alternate, num18Y 3.4s linear 0s infinite alternate;
+	-moz-animation: num18X 13.05s linear 0s infinite alternate, num18Y 3.4s linear 0s infinite alternate;
+	-o-animation: num18X 13.05s linear 0s infinite alternate, num18Y 3.4s linear 0s infinite alternate;
+	animation: num18X 13.05s cubic-bezier(0.89, 0.76, 0.58, 1) 0s infinite alternate, num18Y 3.4s cubic-bezier(0.78, 0.66, 0.58, 1) 0s infinite alternate;
+}
+
+@-webkit-keyframes num18X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-moz-keyframes num18X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-o-keyframes num18X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@keyframes num18X {
+	from {
+		left: 0;
+	}
+	to {
+		left: 90%;
+	}
+}
+
+@-webkit-keyframes num18Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-moz-keyframes num18Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@-o-keyframes num18Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
+
+@keyframes num18Y {
+	from {
+		top: 0;
+	}
+	to {
+		top: 90%;
+	}
+}
