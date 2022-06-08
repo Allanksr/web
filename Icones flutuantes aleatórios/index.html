@@ -52,7 +52,7 @@
       gabysflashtitle()
     </script>
     <script>
-      var baseUrl = "https://lh3.googleusercontent.com/"
+       var baseUrl = "https://lh3.googleusercontent.com/"
       var imagens = [
         baseUrl + "-DudTdZG83S4/YWSTiP4hmRI/AAAAAAAAQOI/rrYfVpSOnxMgA9Xbi6wzdEXefVx26x7FgCLcBGAsYHQ/apple",
         baseUrl + "-GX0JMy2IjzY/YWSTiIfKOYI/AAAAAAAAQOM/Vm2WG8_lHP8QWSxaAhJoMg6Fbf886Y7gQCLcBGAsYHQ/bitcoin",
@@ -72,111 +72,43 @@
         baseUrl + "-5vYyJAxDsdM/YWSTmRFRW-I/AAAAAAAAQPA/1c4WxtFWOwEa-upCGD8UTSQx2KOvFaAfQCLcBGAsYHQ/twitter",
         baseUrl + "-dXXya4nItz4/YWSTmizBnrI/AAAAAAAAQPE/wLNLUgfmgFYs5IFlVTpgCxaBbwYob2ALACLcBGAsYHQ/whatsApp",
         baseUrl + "-fQeFaBUiI5I/YWSTmx8BxWI/AAAAAAAAQPI/er1vsmtDv5go9vYJKG3Jx0Sy8vpx65BKwCLcBGAsYHQ/youtube",
-        baseUrl + "-T_xFMsTyjbs/YWSTnPshu7I/AAAAAAAAQPM/oGSM8bDw0jwd9X0UTOtdtALcTITI19HVQCLcBGAsYHQ/zello"
+        baseUrl + "-T_xFMsTyjbs/YWSTnPshu7I/AAAAAAAAQPM/oGSM8bDw0jwd9X0UTOtdtALcTITI19HVQCLcBGAsYHQ/zello",
+		baseUrl + "-T_xFMsTyjbs/YWSTnPshu7I/AAAAAAAAQPM/oGSM8bDw0jwd9X0UTOtdtALcTITI19HVQCLcBGAsYHQ/zello"
       ]
-      var imagensPositions = [
-        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
-      ]
-      var altTitles = ["Apple", "Bitcoin", "Blogger", "Facebook", "Github", "Instagram", "LinkedIn", "Playstore", "Rumble", "Signal", "Sound", "Stack Overflow", "Telegram", "Tiktok", "Twitch", "Twitter", "Whats App", "You tube", "Zello"]
-
+   
       function changeFavicon() {
         var randomFav = Math.floor(Math.random() * imagens.length)
         document.getElementById("favi").setAttribute("href", imagens[randomFav])
         setTimeout("changeFavicon()", 3000)
       }
       changeFavicon()
-      window.addEventListener("load", () => {
-        var div0 = document.createElement("div")
-        var div1 = document.createElement("div")
-        var div2 = document.createElement("div")
-        var div3 = document.createElement("div")
-        var div4 = document.createElement("div")
-        var div5 = document.createElement("div")
-        var div6 = document.createElement("div")
-        var div7 = document.createElement("div")
-        var div8 = document.createElement("div")
-        var div9 = document.createElement("div")
-        var div10 = document.createElement("div")
-        var div11 = document.createElement("div")
-        var div12 = document.createElement("div")
-        var div13 = document.createElement("div")
-        var div14 = document.createElement("div")
-        var div15 = document.createElement("div")
-        var div16 = document.createElement("div")
-        var div17 = document.createElement("div")
-        var div18 = document.createElement("div")
-        div0.setAttribute("class", "num0")
-        document.getElementsByClassName("container")[0].appendChild(div0)
-        div1.setAttribute("class", "num1")
-        document.getElementsByClassName("container")[0].appendChild(div1)
-        div2.setAttribute("class", "num2")
-        document.getElementsByClassName("container")[0].appendChild(div2)
-        div3.setAttribute("class", "num3")
-        document.getElementsByClassName("container")[0].appendChild(div3)
-        div4.setAttribute("class", "num4")
-        document.getElementsByClassName("container")[0].appendChild(div4)
-        div5.setAttribute("class", "num5")
-        document.getElementsByClassName("container")[0].appendChild(div5)
-        div6.setAttribute("class", "num6")
-        document.getElementsByClassName("container")[0].appendChild(div6)
-        div7.setAttribute("class", "num7")
-        document.getElementsByClassName("container")[0].appendChild(div7)
-        div8.setAttribute("class", "num8")
-        document.getElementsByClassName("container")[0].appendChild(div8)
-        div9.setAttribute("class", "num9")
-        document.getElementsByClassName("container")[0].appendChild(div9)
-        div10.setAttribute("class", "num10")
-        document.getElementsByClassName("container")[0].appendChild(div10)
-        div11.setAttribute("class", "num11")
-        document.getElementsByClassName("container")[0].appendChild(div11)
-        div12.setAttribute("class", "num12")
-        document.getElementsByClassName("container")[0].appendChild(div12)
-        div13.setAttribute("class", "num13")
-        document.getElementsByClassName("container")[0].appendChild(div13)
-        div14.setAttribute("class", "num14")
-        document.getElementsByClassName("container")[0].appendChild(div14)
-        div15.setAttribute("class", "num15")
-        document.getElementsByClassName("container")[0].appendChild(div15)
-        div16.setAttribute("class", "num16")
-        document.getElementsByClassName("container")[0].appendChild(div16)
-        div17.setAttribute("class", "num17")
-        document.getElementsByClassName("container")[0].appendChild(div17)
-        div18.setAttribute("class", "num18")
-        document.getElementsByClassName("container")[0].appendChild(div18)
-        var divRandom = [
-          div0,
-          div1,
-          div2,
-          div3,
-          div4,
-          div5,
-          div6,
-          div7,
-          div8,
-          div9,
-          div10,
-          div11,
-          div12,
-          div13,
-          div14,
-          div15,
-          div16,
-          div17,
-          div18
-        ]
+	  
+      window.addEventListener("load", () => { 
+       var imagensPositions = []	  
+        var divRandom = []
+		  var altTitles = []
+		for (let i = 0; i < imagens.length; i++) {
+	      var createDiv = document.createElement("div")
+		  createDiv.setAttribute("class", "num"+i+"")
+		  document.getElementsByClassName("container")[0].appendChild(createDiv)
+		  imagensPositions.push(i)
+		  divRandom.push(createDiv)
+		  altTitles.push("num"+i+"")
+		}
+		
         var numIncrease = -1
 
         function changeOverlay() {
           var random = Math.floor(Math.random() * imagensPositions.length)
           numIncrease++
-          if (numIncrease < 19) {
+          if (numIncrease < imagens.length) {
             setTimeout(function() {
               var remainingImages = imagensPositions.splice(random, 1)[0]
               var remainingNames = altTitles.splice(random, 1)[0]
               var divs = divRandom[numIncrease]
               divs.setAttribute("title", "" + remainingNames + "")
-              var inflatering = ' <div title = "' + remainingNames + '" alt = "' + remainingNames + '"' +
-              'style="float:left;width:50px;height:50px; background-image: url(' + imagens[remainingImages] + '); background-size:contain; background-repeat:no-repeat;"></div><br /> '
+              var inflatering = '<div title= "' + remainingNames + '" alt="' + remainingNames + '"' +
+              'style="float:left;width:50px;height:50px; background-image: url(' + imagens[remainingImages] + '); background-size:contain; background-repeat:no-repeat;"></div><br />'
               divs.innerHTML = inflatering
               changeOverlay()
             }, 1000)
